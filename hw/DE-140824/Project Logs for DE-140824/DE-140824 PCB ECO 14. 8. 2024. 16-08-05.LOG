@@ -1,0 +1,50 @@
+Removed Pin From Net: NetName=L2 Pin=U7-1
+Removed Pin From Net: NetName=L2 Pin=U7-2
+Removed Pin From Net: NetName=L_2 Pin=U7-3
+Removed Pin From Net: NetName=L_2 Pin=U7-4
+Removed Member From Class: ClassName=DE-140824 Member=R16
+Removed Member From Class: ClassName=DE-140824_01 Member=U6
+Added Pin To Net: NetName=L_2 Pin=U7-1
+Added Pin To Net: NetName=L_2 Pin=U7-2
+Added Pin To Net: NetName=L2 Pin=U7-3
+Added Pin To Net: NetName=L2 Pin=U7-4
+Added Member To Class: ClassName=DE-140824 Member=Component C13 C0805
+Added Member To Class: ClassName=DE-140824 Member=Component C14 C0603
+Added Member To Class: ClassName=DE-140824 Member=Component C15 C0603
+Added Member To Class: ClassName=DE-140824_01 Member=Component D2 BTA08-600
+Added Member To Class: ClassName=DE-140824_01 Member=Component D4 BTA08-600
+Added Member To Class: ClassName=DE-140824_01 Member=Component D6 BTA08-600
+Added Member To Class: ClassName=DE-140824_01 Member=Component D8 BTA08-600
+Added Member To Class: ClassName=DE-140824_01 Member=Component D10 BTA08-600
+Added Member To Class: ClassName=DE-140824_01 Member=Component D12 BTA08-600
+Added Member To Class: ClassName=DE-140824_01 Member=Component D14 BTA08-600
+Added Member To Class: ClassName=DE-140824_01 Member=Component D22 LED5
+Added Member To Class: ClassName=DE-140824 Member=Component P8 
+Added Member To Class: ClassName=DE-140824 Member=Component P9 
+Added Member To Class: ClassName=DE-140824 Member=Component P12 Header 12
+Added Member To Class: ClassName=DE-140824 Member=Component R12 100R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R13 220R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R14 120R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R19 120R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R22 330R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R24 120R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R25 120R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R26 120R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R37 220R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R38 120R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R42 330R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R43 220R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R46 120R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R48 120R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R49 120R
+Added Member To Class: ClassName=DE-140824_01 Member=Component R50 120R
+Added Member To Class: ClassName=DE-140824 Member=Component U7 MCS1802GS-10-Z
+Added Member To Class: ClassName=DE-140824 Member=Component U8 REG1117-3.3
+Added Member To Class: ClassName=DE-140824_01 Member=Component U10 MOC3081
+Added Member To Class: ClassName=DE-140824_01 Member=Component U12 MOC3081
+Added Member To Class: ClassName=DE-140824_01 Member=Component U14 MOC3081
+Added Member To Class: ClassName=DE-140824_01 Member=Component U16 MOC3081
+Added Member To Class: ClassName=DE-140824_01 Member=Component U18 MOC3081
+Added Member To Class: ClassName=DE-140824_01 Member=Component U20 MOC3081
+Added Member To Class: ClassName=DE-140824_01 Member=Component U22 MOC3081
+Added Member To Class: ClassName=DE-140824_01 Member=Component U24 MOC3081

@@ -1,0 +1,39 @@
+Altium Designer Pick and Place Locations
+D:\ProjektiOtvoreni\Expanderi\TriacExpander\DE-140824\Pick Place for DE-140824_1.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       22/08/24
+Time:       15:01
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+Designator Comment      Layer       Footprint      Center-X(mil) Center-Y(mil) Rotation Description                                                                                           
+S3         FUNC         TopLayer    TACTILE_SWITCH 373.744       334.705       0        ""                                                                                                    
+S2         MOVE         TopLayer    TACTILE_SWITCH 1088.744      334.705       0        ""                                                                                                    
+R96        220R         BottomLayer ERA-0603       1868.744      664.705       270      "Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0805 Size, 0.1 W" 
+R95        220R         BottomLayer ERA-0603       1768.744      664.705       270      "Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0805 Size, 0.1 W" 
+R94        220R         BottomLayer ERA-0603       1668.744      664.705       270      "Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0805 Size, 0.1 W" 
+R93        220R         BottomLayer ERA-0603       1568.744      664.705       270      "Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0805 Size, 0.1 W" 
+D32        LED15        TopLayer    1.6X0.8X0.8    1212.744      742.579       270      "Blue Surface Mount Chip LED, Blue"                                                                   
+D31        LED11        TopLayer    1.6X0.8X0.8    684.744       742.579       270      "Blue Surface Mount Chip LED, Blue"                                                                   
+D30        LED7         TopLayer    1.6X0.8X0.8    1212.744      930.177       90       "Blue Surface Mount Chip LED, Blue"                                                                   
+D29        LED3         TopLayer    1.6X0.8X0.8    684.744       930.177       90       "Blue Surface Mount Chip LED, Blue"                                                                   
+D28        LED14        TopLayer    1.6X0.8X0.8    1080.744      742.579       270      "Blue Surface Mount Chip LED, Blue"                                                                   
+D27        LED10        TopLayer    1.6X0.8X0.8    552.744       742.579       270      "Blue Surface Mount Chip LED, Blue"                                                                   
+D25        LED2         TopLayer    1.6X0.8X0.8    552.744       930.177       90       "Blue Surface Mount Chip LED, Blue"                                                                   
+D24        LED13        TopLayer    1.6X0.8X0.8    948.744       742.579       270      "Blue Surface Mount Chip LED, Blue"                                                                   
+D23        LED9         TopLayer    1.6X0.8X0.8    420.744       742.579       270      "Blue Surface Mount Chip LED, Blue"                                                                   
+D22        LED5         TopLayer    1.6X0.8X0.8    948.744       930.177       90       "Blue Surface Mount Chip LED, Blue"                                                                   
+D21        LED1         TopLayer    1.6X0.8X0.8    420.744       930.177       90       "Blue Surface Mount Chip LED, Blue"                                                                   
+D20        LED12        TopLayer    1.6X0.8X0.8    816.744       742.579       270      "Blue Surface Mount Chip LED, Blue"                                                                   
+D19        LED8         TopLayer    1.6X0.8X0.8    288.744       742.579       270      "Blue Surface Mount Chip LED, Blue"                                                                   
+D17        LED0         TopLayer    1.6X0.8X0.8    288.744       930.177       90       "Blue Surface Mount Chip LED, Blue"                                                                   
+C25        C0603        BottomLayer 0603           373.744       329.705       0        "Ceramic Chip Capacitor - Standard"                                                                   
+C24        C0603        BottomLayer 0603           1093.744      334.705       0        "Ceramic Chip Capacitor - Standard"                                                                   
+D18        LED4         TopLayer    1.6X0.8X0.8    816.744       930.177       90       "Blue Surface Mount Chip LED, Blue"                                                                   
+D26        LED6         TopLayer    1.6X0.8X0.8    1080.744      930.177       90       "Blue Surface Mount Chip LED, Blue"                                                                   
+P19        "Header 8X2" TopLayer    HDR2X8         1918.744      854.705       0        "Header, 8-Pin, Dual row"                                                                             
+S1         "SW DIP-6"   TopLayer    DIP-12/SW      2018.744      334.705       0        "DIP Switch, 6 Position, SPST"                                                                        

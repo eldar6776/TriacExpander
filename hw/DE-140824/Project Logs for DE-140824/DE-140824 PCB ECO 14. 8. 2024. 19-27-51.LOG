@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=THY_CH0 Pin=U1-32
+Removed Pin From Net: NetName=THY_CH1 Pin=U1-33
+Removed Pin From Net: NetName=THY_CH7 Pin=U1-35
+Removed Pin From Net: NetName=THY_CH6 Pin=U1-36
+Removed Pin From Net: NetName=THY_CH2 Pin=U1-38
+Removed Pin From Net: NetName=THY_CH3 Pin=U1-39
+Removed Pin From Net: NetName=THY_CH4 Pin=U1-40
+Removed Pin From Net: NetName=THY_CH5 Pin=U1-41
+Added Pin To Net: NetName=THY_CH7 Pin=U1-32
+Added Pin To Net: NetName=THY_CH6 Pin=U1-33
+Added Pin To Net: NetName=THY_CH5 Pin=U1-35
+Added Pin To Net: NetName=THY_CH4 Pin=U1-36
+Added Pin To Net: NetName=THY_CH3 Pin=U1-38
+Added Pin To Net: NetName=THY_CH2 Pin=U1-39
+Added Pin To Net: NetName=THY_CH1 Pin=U1-40
+Added Pin To Net: NetName=THY_CH0 Pin=U1-41

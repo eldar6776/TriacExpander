@@ -1,0 +1,314 @@
+Protel Design System Design Rule Check
+PCB File : D:\ProjektiOtvoreni\Expanderi\TriacExpander\DE-140824\DE-140824_2.PcbDoc
+Date     : 17. 8. 2024.
+Time     : 17:14:46
+
+Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Short-Circuit Constraint: Between Pad C24-1(1061.535mil,350mil) on Bottom Layer And Track (1003.37mil,350mil)(1061.535mil,350mil) on Bottom Layer Location : [X = 2053.258mil][Y = 1350mil]
+   Violation between Short-Circuit Constraint: Between Pad C24-2(1128.465mil,350mil) on Bottom Layer And Track (1128.465mil,350mil)(1173.583mil,350mil) on Bottom Layer Location : [X = 2134.248mil][Y = 1350mil]
+   Violation between Short-Circuit Constraint: Between Pad C25-1(341.536mil,345mil) on Bottom Layer And Track (286.417mil,345mil)(341.536mil,345mil) on Bottom Layer Location : [X = 1333.258mil][Y = 1345mil]
+   Violation between Short-Circuit Constraint: Between Pad C25-2(408.465mil,345mil) on Bottom Layer And Track (408.465mil,345mil)(463.583mil,345mil) on Bottom Layer Location : [X = 1414.248mil][Y = 1345mil]
+   Violation between Short-Circuit Constraint: Between Pad D17-1(290mil,915.945mil) on Top Layer And Track (290mil,851.673mil)(290mil,915.945mil) on Top Layer Location : [X = 1290mil][Y = 1913.114mil]
+   Violation between Short-Circuit Constraint: Between Pad D17-2(290mil,975mil) on Top Layer And Track (290mil,975mil)(422mil,975mil) on Top Layer Location : [X = 1292.831mil][Y = 1975mil]
+   Violation between Short-Circuit Constraint: Between Pad D18-1(818mil,915.945mil) on Top Layer And Track (818mil,851.673mil)(818mil,915.945mil) on Top Layer Location : [X = 1818mil][Y = 1913.114mil]
+   Violation between Short-Circuit Constraint: Between Pad D18-2(818mil,975mil) on Top Layer And Track (818mil,975mil)(950mil,975mil) on Top Layer Location : [X = 1820.831mil][Y = 1975mil]
+   Violation between Short-Circuit Constraint: Between Pad D19-1(290mil,787.402mil) on Top Layer And Track (290mil,787.402mil)(290mil,851.673mil) on Top Layer Location : [X = 1290mil][Y = 1790.232mil]
+   Violation between Short-Circuit Constraint: Between Pad D19-2(290mil,728.346mil) on Top Layer And Track (290mil,728.346mil)(422mil,728.346mil) on Top Layer Location : [X = 1292.831mil][Y = 1728.346mil]
+   Violation between Short-Circuit Constraint: Between Pad D20-1(818mil,787.402mil) on Top Layer And Track (818mil,787.402mil)(818mil,851.673mil) on Top Layer Location : [X = 1818mil][Y = 1790.232mil]
+   Violation between Short-Circuit Constraint: Between Pad D20-2(818mil,728.346mil) on Top Layer And Track (818mil,728.346mil)(950mil,728.346mil) on Top Layer Location : [X = 1820.831mil][Y = 1728.346mil]
+   Violation between Short-Circuit Constraint: Between Pad D21-1(422mil,915.945mil) on Top Layer And Track (422mil,851.673mil)(422mil,915.945mil) on Top Layer Location : [X = 1422mil][Y = 1913.114mil]
+   Violation between Short-Circuit Constraint: Between Pad D21-2(422mil,975mil) on Top Layer And Track (290mil,975mil)(422mil,975mil) on Top Layer Location : [X = 1419.169mil][Y = 1975mil]
+   Violation between Short-Circuit Constraint: Between Pad D21-2(422mil,975mil) on Top Layer And Track (422mil,975mil)(554mil,975mil) on Top Layer Location : [X = 1424.831mil][Y = 1975mil]
+   Violation between Short-Circuit Constraint: Between Pad D22-1(950mil,915.945mil) on Top Layer And Track (950mil,851.673mil)(950mil,915.945mil) on Top Layer Location : [X = 1950mil][Y = 1913.114mil]
+   Violation between Short-Circuit Constraint: Between Pad D22-2(950mil,975mil) on Top Layer And Track (818mil,975mil)(950mil,975mil) on Top Layer Location : [X = 1947.169mil][Y = 1975mil]
+   Violation between Short-Circuit Constraint: Between Pad D22-2(950mil,975mil) on Top Layer And Track (950mil,975mil)(1082mil,975mil) on Top Layer Location : [X = 1952.831mil][Y = 1975mil]
+   Violation between Short-Circuit Constraint: Between Pad D23-1(422mil,787.402mil) on Top Layer And Track (422mil,787.402mil)(422mil,851.673mil) on Top Layer Location : [X = 1422mil][Y = 1790.232mil]
+   Violation between Short-Circuit Constraint: Between Pad D23-2(422mil,728.346mil) on Top Layer And Track (290mil,728.346mil)(422mil,728.346mil) on Top Layer Location : [X = 1419.169mil][Y = 1728.346mil]
+   Violation between Short-Circuit Constraint: Between Pad D23-2(422mil,728.346mil) on Top Layer And Track (422mil,728.346mil)(554mil,728.346mil) on Top Layer Location : [X = 1424.831mil][Y = 1728.346mil]
+   Violation between Short-Circuit Constraint: Between Pad D24-1(950mil,787.402mil) on Top Layer And Track (950mil,787.402mil)(950mil,851.673mil) on Top Layer Location : [X = 1950mil][Y = 1790.232mil]
+   Violation between Short-Circuit Constraint: Between Pad D24-2(950mil,728.346mil) on Top Layer And Track (818mil,728.346mil)(950mil,728.346mil) on Top Layer Location : [X = 1947.169mil][Y = 1728.346mil]
+   Violation between Short-Circuit Constraint: Between Pad D24-2(950mil,728.346mil) on Top Layer And Track (950mil,728.346mil)(1082mil,728.346mil) on Top Layer Location : [X = 1952.831mil][Y = 1728.346mil]
+   Violation between Short-Circuit Constraint: Between Pad D25-1(554mil,915.945mil) on Top Layer And Track (554mil,850mil)(554mil,915.945mil) on Top Layer Location : [X = 1554mil][Y = 1913.114mil]
+   Violation between Short-Circuit Constraint: Between Pad D25-2(554mil,975mil) on Top Layer And Track (422mil,975mil)(554mil,975mil) on Top Layer Location : [X = 1551.169mil][Y = 1975mil]
+   Violation between Short-Circuit Constraint: Between Pad D25-2(554mil,975mil) on Top Layer And Track (554mil,975mil)(686mil,975mil) on Top Layer Location : [X = 1556.831mil][Y = 1975mil]
+   Violation between Short-Circuit Constraint: Between Pad D26-1(1082mil,915.945mil) on Top Layer And Track (1082mil,787.402mil)(1082mil,915.945mil) on Top Layer Location : [X = 2082mil][Y = 1913.114mil]
+   Violation between Short-Circuit Constraint: Between Pad D26-2(1082mil,975mil) on Top Layer And Track (1082mil,975mil)(1214mil,975mil) on Top Layer Location : [X = 2084.831mil][Y = 1975mil]
+   Violation between Short-Circuit Constraint: Between Pad D26-2(1082mil,975mil) on Top Layer And Track (950mil,975mil)(1082mil,975mil) on Top Layer Location : [X = 2079.169mil][Y = 1975mil]
+   Violation between Short-Circuit Constraint: Between Pad D27-1(554mil,787.402mil) on Top Layer And Track (554mil,787.402mil)(554mil,850mil) on Top Layer Location : [X = 1554mil][Y = 1790.232mil]
+   Violation between Short-Circuit Constraint: Between Pad D27-2(554mil,728.346mil) on Top Layer And Track (422mil,728.346mil)(554mil,728.346mil) on Top Layer Location : [X = 1551.169mil][Y = 1728.346mil]
+   Violation between Short-Circuit Constraint: Between Pad D27-2(554mil,728.346mil) on Top Layer And Track (554mil,728.346mil)(686mil,728.346mil) on Top Layer Location : [X = 1556.831mil][Y = 1728.346mil]
+   Violation between Short-Circuit Constraint: Between Pad D28-1(1082mil,787.402mil) on Top Layer And Track (1082mil,787.402mil)(1082mil,915.945mil) on Top Layer Location : [X = 2082mil][Y = 1790.232mil]
+   Violation between Short-Circuit Constraint: Between Pad D28-2(1082mil,728.346mil) on Top Layer And Track (1082mil,728.346mil)(1214mil,728.346mil) on Top Layer Location : [X = 2084.831mil][Y = 1728.346mil]
+   Violation between Short-Circuit Constraint: Between Pad D28-2(1082mil,728.346mil) on Top Layer And Track (950mil,728.346mil)(1082mil,728.346mil) on Top Layer Location : [X = 2079.169mil][Y = 1728.346mil]
+   Violation between Short-Circuit Constraint: Between Pad D29-1(686mil,915.945mil) on Top Layer And Track (686mil,851.673mil)(686mil,915.945mil) on Top Layer Location : [X = 1686mil][Y = 1913.114mil]
+   Violation between Short-Circuit Constraint: Between Pad D29-2(686mil,975mil) on Top Layer And Track (554mil,975mil)(686mil,975mil) on Top Layer Location : [X = 1683.169mil][Y = 1975mil]
+   Violation between Short-Circuit Constraint: Between Pad D29-2(686mil,975mil) on Top Layer And Track (686mil,975mil)(741mil,1030mil) on Top Layer Location : [X = 1691.325mil][Y = 1980.325mil]
+   Violation between Short-Circuit Constraint: Between Pad D30-1(1214mil,915.945mil) on Top Layer And Track (1214mil,850mil)(1214mil,915.945mil) on Top Layer Location : [X = 2214mil][Y = 1913.114mil]
+   Violation between Short-Circuit Constraint: Between Pad D30-2(1214mil,975mil) on Top Layer And Track (1082mil,975mil)(1214mil,975mil) on Top Layer Location : [X = 2211.169mil][Y = 1975mil]
+   Violation between Short-Circuit Constraint: Between Pad D30-2(1214mil,975mil) on Top Layer And Track (1214mil,975mil)(1995mil,975mil) on Top Layer Location : [X = 2219.325mil][Y = 1975mil]
+   Violation between Short-Circuit Constraint: Between Pad D31-1(686mil,787.402mil) on Top Layer And Track (686mil,787.402mil)(686mil,851.673mil) on Top Layer Location : [X = 1686mil][Y = 1790.232mil]
+   Violation between Short-Circuit Constraint: Between Pad D31-2(686mil,728.346mil) on Top Layer And Track (554mil,728.346mil)(686mil,728.346mil) on Top Layer Location : [X = 1683.169mil][Y = 1728.346mil]
+   Violation between Short-Circuit Constraint: Between Pad D31-2(686mil,728.346mil) on Top Layer And Track (686mil,728.346mil)(739.346mil,675mil) on Top Layer Location : [X = 1691.325mil][Y = 1723.021mil]
+   Violation between Short-Circuit Constraint: Between Pad D32-1(1214mil,787.402mil) on Top Layer And Track (1214mil,787.402mil)(1214mil,850mil) on Top Layer Location : [X = 2214mil][Y = 1790.232mil]
+   Violation between Short-Circuit Constraint: Between Pad D32-2(1214mil,728.346mil) on Top Layer And Track (1082mil,728.346mil)(1214mil,728.346mil) on Top Layer Location : [X = 2211.169mil][Y = 1728.346mil]
+   Violation between Short-Circuit Constraint: Between Pad D32-2(1214mil,728.346mil) on Top Layer And Track (1214mil,728.346mil)(2248.346mil,728.346mil) on Top Layer Location : [X = 2219.325mil][Y = 1728.346mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-1(1570mil,820mil) on Multi-Layer And Track (1570mil,713.465mil)(1570mil,820mil) on Bottom Layer Location : [X = 2570mil][Y = 1807.785mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-10(1970mil,920mil) on Multi-Layer And Track (1970mil,920mil)(2020mil,870mil) on Bottom Layer Location : [X = 2979.557mil][Y = 1910.443mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-11(2070mil,820mil) on Multi-Layer And Track (2020mil,870mil)(2070mil,820mil) on Top Layer Location : [X = 3060.443mil][Y = 1829.557mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-12(2070mil,920mil) on Multi-Layer And Track (2070mil,920mil)(2125mil,865mil) on Bottom Layer Location : [X = 3079.557mil][Y = 1910.443mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-13(2170mil,820mil) on Multi-Layer And Track (2170mil,820mil)(2220mil,870mil) on Top Layer Location : [X = 3179.557mil][Y = 1829.557mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-14(2170mil,920mil) on Multi-Layer And Track (2170mil,920mil)(2220mil,870mil) on Bottom Layer Location : [X = 3179.557mil][Y = 1910.443mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-15(2270mil,820mil) on Multi-Layer And Track (2270mil,750mil)(2270mil,820mil) on Top Layer Location : [X = 3270mil][Y = 1807.74mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-16(2270mil,920mil) on Multi-Layer And Track (2270mil,920mil)(2345mil,845mil) on Bottom Layer Location : [X = 3279.557mil][Y = 1910.443mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-2(1570mil,920mil) on Multi-Layer And Track (1440mil,1050mil)(1570mil,920mil) on Bottom Layer Location : [X = 2560.443mil][Y = 1929.557mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-3(1670mil,820mil) on Multi-Layer And Track (1670mil,713.465mil)(1670mil,820mil) on Bottom Layer Location : [X = 2670mil][Y = 1807.74mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-4(1670mil,920mil) on Multi-Layer And Track (1530mil,1075mil)(1670mil,935mil) on Bottom Layer Location : [X = 2664.228mil][Y = 1939.345mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-4(1670mil,920mil) on Multi-Layer And Track (1670mil,920mil)(1670mil,935mil) on Bottom Layer Location : [X = 2670mil][Y = 1927.5mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-5(1770mil,820mil) on Multi-Layer And Track (1770mil,713.465mil)(1770mil,820mil) on Bottom Layer Location : [X = 2770mil][Y = 1807.74mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-6(1770mil,920mil) on Multi-Layer And Track (1770mil,920mil)(1770mil,930mil) on Bottom Layer Location : [X = 2770mil][Y = 1925mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-6(1770mil,920mil) on Multi-Layer And Track (1770mil,930mil)(1835mil,995mil) on Bottom Layer Location : [X = 2777.17mil][Y = 1936.271mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-7(1870mil,820mil) on Multi-Layer And Track (1870mil,713.465mil)(1870mil,820mil) on Bottom Layer Location : [X = 2870mil][Y = 1807.74mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-8(1870mil,920mil) on Multi-Layer And Track (1870mil,920mil)(1920mil,870mil) on Bottom Layer Location : [X = 2879.557mil][Y = 1910.443mil]
+   Violation between Short-Circuit Constraint: Between Pad P19-9(1970mil,820mil) on Multi-Layer And Track (1970mil,820mil)(2025mil,765mil) on Top Layer Location : [X = 2979.557mil][Y = 1810.443mil]
+   Violation between Short-Circuit Constraint: Between Pad R93-1(1570mil,713.465mil) on Bottom Layer And Track (1570mil,713.465mil)(1570mil,820mil) on Bottom Layer Location : [X = 2570mil][Y = 1721.742mil]
+   Violation between Short-Circuit Constraint: Between Pad R93-2(1570mil,646.535mil) on Bottom Layer And Track (1515mil,645mil)(1568.465mil,645mil) on Bottom Layer Location : [X = 2561.939mil][Y = 1645mil]
+   Violation between Short-Circuit Constraint: Between Pad R93-2(1570mil,646.535mil) on Bottom Layer And Track (1568.465mil,645mil)(1570mil,646.535mil) on Bottom Layer Location : [X = 2569.232mil][Y = 1645.768mil]
+   Violation between Short-Circuit Constraint: Between Pad R94-1(1670mil,713.465mil) on Bottom Layer And Track (1670mil,713.465mil)(1670mil,820mil) on Bottom Layer Location : [X = 2670mil][Y = 1721.742mil]
+   Violation between Short-Circuit Constraint: Between Pad R94-2(1670mil,646.535mil) on Bottom Layer And Track (1655mil,605mil)(1670mil,620mil) on Bottom Layer Location : [X = 2670mil][Y = 1624.99mil]
+   Violation between Short-Circuit Constraint: Between Pad R94-2(1670mil,646.535mil) on Bottom Layer And Track (1670mil,620mil)(1670mil,646.535mil) on Bottom Layer Location : [X = 2670mil][Y = 1638.258mil]
+   Violation between Short-Circuit Constraint: Between Pad R95-1(1770mil,713.465mil) on Bottom Layer And Track (1770mil,713.465mil)(1770mil,820mil) on Bottom Layer Location : [X = 2770mil][Y = 1721.742mil]
+   Violation between Short-Circuit Constraint: Between Pad R95-2(1770mil,646.535mil) on Bottom Layer And Track (1770mil,615mil)(1770mil,646.535mil) on Bottom Layer Location : [X = 2770mil][Y = 1638.258mil]
+   Violation between Short-Circuit Constraint: Between Pad R96-1(1870mil,713.465mil) on Bottom Layer And Track (1870mil,713.465mil)(1870mil,820mil) on Bottom Layer Location : [X = 2870mil][Y = 1721.742mil]
+   Violation between Short-Circuit Constraint: Between Pad R96-2(1870mil,646.535mil) on Bottom Layer And Track (1870mil,600mil)(1870mil,646.535mil) on Bottom Layer Location : [X = 2870mil][Y = 1638.258mil]
+   Violation between Short-Circuit Constraint: Between Pad S1-1(1770mil,200mil) on Multi-Layer And Track (1770mil,155mil)(1770mil,200mil) on Bottom Layer Location : [X = 2770mil][Y = 1187.785mil]
+   Violation between Short-Circuit Constraint: Between Pad S1-2(1870mil,200mil) on Multi-Layer And Track (1870mil,200mil)(1920mil,250mil) on Bottom Layer Location : [X = 2879.557mil][Y = 1209.557mil]
+   Violation between Short-Circuit Constraint: Between Pad S1-3(1970mil,200mil) on Multi-Layer And Track (1970mil,200mil)(2020mil,250mil) on Bottom Layer Location : [X = 2979.557mil][Y = 1209.557mil]
+   Violation between Short-Circuit Constraint: Between Pad S1-4(2070mil,200mil) on Multi-Layer And Track (2070mil,200mil)(2125mil,255mil) on Bottom Layer Location : [X = 3079.557mil][Y = 1209.557mil]
+   Violation between Short-Circuit Constraint: Between Pad S1-5(2170mil,200mil) on Multi-Layer And Track (2170mil,200mil)(2220mil,250mil) on Bottom Layer Location : [X = 3179.557mil][Y = 1209.557mil]
+   Violation between Short-Circuit Constraint: Between Pad S1-6(2270mil,200mil) on Multi-Layer And Track (2270mil,200mil)(2345mil,275mil) on Bottom Layer Location : [X = 3279.557mil][Y = 1209.557mil]
+   Violation between Short-Circuit Constraint: Between Pad S2-1(1001.417mil,438.583mil) on Multi-Layer And Track (1003.37mil,350mil)(1003.37mil,496.63mil) on Bottom Layer Location : [X = 2003.37mil][Y = 1438.583mil]
+   Violation between Short-Circuit Constraint: Between Pad S2-2(1178.583mil,438.583mil) on Multi-Layer And Track (1178.583mil,345mil)(1178.583mil,438.583mil) on Bottom Layer Location : [X = 2178.583mil][Y = 1428.579mil]
+   Violation between Short-Circuit Constraint: Between Pad S2-3(1178.583mil,261.417mil) on Multi-Layer And Track (1178.583mil,261.417mil)(1178.583mil,345mil) on Bottom Layer Location : [X = 2178.583mil][Y = 1271.42mil]
+   Violation between Short-Circuit Constraint: Between Pad S2-4(1001.417mil,261.417mil) on Multi-Layer And Track (1003.37mil,290mil)(1003.37mil,350mil) on Bottom Layer Location : [X = 2003.37mil][Y = 1288.206mil]
+   Violation between Short-Circuit Constraint: Between Pad S3-1(286.417mil,438.583mil) on Multi-Layer And Track (155mil,570mil)(286.417mil,438.583mil) on Bottom Layer Location : [X = 1276.688mil][Y = 1448.311mil]
+   Violation between Short-Circuit Constraint: Between Pad S3-1(286.417mil,438.583mil) on Multi-Layer And Track (286.417mil,345mil)(286.417mil,438.583mil) on Bottom Layer Location : [X = 1286.417mil][Y = 1426.085mil]
+   Violation between Short-Circuit Constraint: Between Pad S3-2(463.583mil,438.583mil) on Multi-Layer And Track (463.583mil,345mil)(463.583mil,438.583mil) on Bottom Layer Location : [X = 1463.583mil][Y = 1428.579mil]
+   Violation between Short-Circuit Constraint: Between Pad S3-3(463.583mil,261.417mil) on Multi-Layer And Track (463.583mil,261.417mil)(463.583mil,345mil) on Bottom Layer Location : [X = 1463.583mil][Y = 1271.42mil]
+   Violation between Short-Circuit Constraint: Between Pad S3-4(286.417mil,261.417mil) on Multi-Layer And Track (286.417mil,261.417mil)(286.417mil,345mil) on Bottom Layer Location : [X = 1286.417mil][Y = 1273.915mil]
+Rule Violations :91
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Track (1001.327mil,903mil)(1231.544mil,903mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1003.37mil,290mil)(1003.37mil,350mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1003.37mil,350mil)(1003.37mil,496.63mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1003.37mil,350mil)(1061.535mil,350mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1022mil,792mil)(1080mil,850mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1080mil,850mil)(1080mil,865mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1080mil,865mil)(1100mil,885mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1082mil,728.346mil)(1214mil,728.346mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1082mil,787.402mil)(1082mil,915.945mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1082mil,975mil)(1214mil,975mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1100mil,885mil)(1224.088mil,885mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1128.465mil,350mil)(1173.583mil,350mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1138mil,774mil)(1214mil,850mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1173.583mil,350mil)(1178.583mil,345mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1178.583mil,261.417mil)(1178.583mil,345mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1178.583mil,345mil)(1178.583mil,438.583mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1214mil,728.346mil)(2248.346mil,728.346mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1214mil,787.402mil)(1214mil,850mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1214mil,850mil)(1214mil,915.945mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1214mil,850mil)(1311mil,753mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1214mil,975mil)(1995mil,975mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1224.088mil,885mil)(1522.088mil,587mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1231.544mil,903mil)(1529.544mil,605mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1239mil,921mil)(1515mil,645mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1311mil,752.633mil)(1311mil,753mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1311mil,752.633mil)(1494.633mil,569mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1440mil,1050mil)(1570mil,920mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1494.633mil,569mil)(1839mil,569mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1515mil,645mil)(1568.465mil,645mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1522.088mil,587mil)(1742mil,587mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1529.544mil,605mil)(1655mil,605mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1530mil,1075mil)(1670mil,935mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (155mil,1005mil)(225mil,1075mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (155mil,570mil)(155mil,1005mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (155mil,570mil)(286.417mil,438.583mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1568.465mil,645mil)(1570mil,646.535mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1570mil,713.465mil)(1570mil,820mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1655mil,605mil)(1670mil,620mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1670mil,620mil)(1670mil,646.535mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1670mil,713.465mil)(1670mil,820mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1670mil,920mil)(1670mil,935mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1742mil,587mil)(1770mil,615mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1770mil,155mil)(1770mil,200mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1770mil,155mil)(1800mil,125mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1770mil,615mil)(1770mil,646.535mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1770mil,713.465mil)(1770mil,820mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1770mil,920mil)(1770mil,930mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1770mil,930mil)(1835mil,995mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1800mil,125mil)(2310mil,125mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1835mil,995mil)(2320mil,995mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1839mil,569mil)(1870mil,600mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (185mil,685mil)(185mil,995mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (185mil,685mil)(320mil,550mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (185mil,995mil)(240mil,1050mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1870mil,200mil)(1920mil,250mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1870mil,600mil)(1870mil,646.535mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1870mil,713.465mil)(1870mil,820mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1870mil,920mil)(1920mil,870mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1920mil,250mil)(1920mil,870mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1970mil,200mil)(2020mil,250mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1970mil,820mil)(2025mil,765mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1970mil,920mil)(2020mil,870mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (1995mil,975mil)(2020mil,950mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2020mil,250mil)(2020mil,870mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2020mil,870mil)(2020mil,950mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2020mil,870mil)(2070mil,820mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2025mil,765mil)(2105mil,765mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2045mil,1030mil)(2125mil,950mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2070mil,200mil)(2125mil,255mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2070mil,920mil)(2125mil,865mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2105mil,765mil)(2125mil,785mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2125mil,255mil)(2125mil,865mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2125mil,785mil)(2125mil,950mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2170mil,200mil)(2220mil,250mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2170mil,820mil)(2220mil,870mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2170mil,920mil)(2220mil,870mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2220mil,250mil)(2220mil,870mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2220mil,870mil)(2315mil,870mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2248.346mil,728.346mil)(2270mil,750mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (225mil,1075mil)(1530mil,1075mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2270mil,200mil)(2345mil,275mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2270mil,750mil)(2270mil,820mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2270mil,920mil)(2345mil,845mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2310mil,125mil)(2395mil,210mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2310mil,675mil)(2340mil,705mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2315mil,870mil)(2340mil,845mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2320mil,995mil)(2395mil,920mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2340mil,705mil)(2340mil,845mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2345mil,275mil)(2345mil,845mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (2395mil,210mil)(2395mil,920mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (240mil,1050mil)(1440mil,1050mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (286.417mil,261.417mil)(286.417mil,345mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (286.417mil,345mil)(286.417mil,438.583mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (286.417mil,345mil)(341.536mil,345mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (290mil,728.346mil)(422mil,728.346mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (290mil,787.402mil)(290mil,851.673mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (290mil,851.673mil)(290mil,875mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (290mil,851.673mil)(290mil,915.945mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (290mil,875mil)(335mil,920mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (290mil,975mil)(422mil,975mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (320mil,550mil)(950mil,550mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (335mil,920mil)(749.673mil,920mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (408.465mil,345mil)(463.583mil,345mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (422mil,728.346mil)(554mil,728.346mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (422mil,787.402mil)(422mil,851.673mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (422mil,851.673mil)(422mil,867mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (422mil,851.673mil)(422mil,915.945mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (422mil,867mil)(457mil,902mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (422mil,975mil)(554mil,975mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (457mil,902mil)(718mil,902mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (463.583mil,261.417mil)(463.583mil,345mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (463.583mil,345mil)(463.583mil,438.583mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (554mil,728.346mil)(686mil,728.346mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (554mil,787.402mil)(554mil,850mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (554mil,850mil)(554mil,874mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (554mil,850mil)(554mil,915.945mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (554mil,874mil)(564mil,884mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (554mil,975mil)(686mil,975mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (564mil,884mil)(710.544mil,884mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (686mil,728.346mil)(739.346mil,675mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (686mil,787.402mil)(686mil,851.673mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (686mil,851.673mil)(686mil,915.945mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (686mil,851.673mil)(763.673mil,774mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (686mil,975mil)(741mil,1030mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (710.544mil,884mil)(802.544mil,792mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (718mil,902mil)(810mil,810mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (739.346mil,675mil)(2310mil,675mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (741mil,1030mil)(2045mil,1030mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (749.673mil,920mil)(818mil,851.673mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (763.673mil,774mil)(1138mil,774mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (802.544mil,792mil)(1022mil,792mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (810mil,810mil)(908.327mil,810mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (818mil,728.346mil)(950mil,728.346mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (818mil,787.402mil)(818mil,851.673mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (818mil,851.673mil)(818mil,915.945mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (818mil,851.673mil)(887.327mil,921mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (818mil,975mil)(950mil,975mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (887.327mil,921mil)(1239mil,921mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (908.327mil,810mil)(950mil,851.673mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (950mil,550mil)(1003.37mil,496.63mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (950mil,728.346mil)(1082mil,728.346mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (950mil,787.402mil)(950mil,851.673mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (950mil,851.673mil)(1001.327mil,903mil) on Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (950mil,851.673mil)(950mil,915.945mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Track (950mil,975mil)(1082mil,975mil) on Top Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (1080mil,850mil) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (1214mil,850mil) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (290mil,851.673mil) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (422mil,851.673mil) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (554mil,850mil) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (686mil,851.673mil) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (818mil,851.673mil) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (950mil,851.673mil) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+Rule Violations :153
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=100mil) (Preferred=20mil) (All)
+Rule Violations :0
+
+Processing Rule : Routing Topology Rule(Topology=Shortest) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=10mil) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (7.874mil < 10mil) Between Pad C24-1(1061.535mil,350mil) on Bottom Layer And Track (1028.071mil,334.252mil)(1028.071mil,365.748mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [7.874mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.874mil < 10mil) Between Pad C25-1(341.536mil,345mil) on Bottom Layer And Track (308.071mil,329.252mil)(308.071mil,360.748mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [7.874mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S2-1(1001.417mil,438.583mil) on Multi-Layer And Track (980mil,240mil)(980mil,455mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S2-1(1001.417mil,438.583mil) on Multi-Layer And Track (980mil,455mil)(1205mil,455mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S2-2(1178.583mil,438.583mil) on Multi-Layer And Track (1205mil,240mil)(1205mil,455mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S2-2(1178.583mil,438.583mil) on Multi-Layer And Track (980mil,455mil)(1205mil,455mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S2-3(1178.583mil,261.417mil) on Multi-Layer And Track (1205mil,240mil)(1205mil,455mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S2-3(1178.583mil,261.417mil) on Multi-Layer And Track (980mil,240mil)(1205mil,240mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S2-4(1001.417mil,261.417mil) on Multi-Layer And Track (980mil,240mil)(1205mil,240mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S2-4(1001.417mil,261.417mil) on Multi-Layer And Track (980mil,240mil)(980mil,455mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S3-1(286.417mil,438.583mil) on Multi-Layer And Track (265mil,240mil)(265mil,455mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S3-1(286.417mil,438.583mil) on Multi-Layer And Track (265mil,455mil)(490mil,455mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S3-2(463.583mil,438.583mil) on Multi-Layer And Track (265mil,455mil)(490mil,455mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S3-2(463.583mil,438.583mil) on Multi-Layer And Track (490mil,240mil)(490mil,455mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S3-3(463.583mil,261.417mil) on Multi-Layer And Track (265mil,240mil)(490mil,240mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S3-3(463.583mil,261.417mil) on Multi-Layer And Track (490mil,240mil)(490mil,455mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S3-4(286.417mil,261.417mil) on Multi-Layer And Track (265mil,240mil)(265mil,455mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad S3-4(286.417mil,261.417mil) on Multi-Layer And Track (265mil,240mil)(490mil,240mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+Rule Violations :18
+
+Processing Rule : Silk to Silk (Clearance=10mil) (All),(All)
+   Violation between Silk To Silk Clearance Constraint: (Collision < 10mil) Between Text "CH0 CH1 CH2 CH3 CH4 CH5 CH6 CH7" (255mil,1045mil) on Top Overlay And Text "CH8 CH9 CH10 CH11 CH12 CH13 CH14 CH15" (540mil,1070mil) on Top Overlay Silk Text to Silk Clearance [0mil]
+Rule Violations :1
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 263
+Waived Violations : 0
+Time Elapsed        : 00:00:01

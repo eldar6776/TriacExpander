@@ -65,15 +65,15 @@ GPIO_TypeDef *TRIAC_PORT[NUMBER_OF_TRIAC] = {GPIOB, GPIOB, GPIOB, GPIOA, GPIOF, 
 uint16_t GATE_PIN[NUMBER_OF_TRIAC] = {GPIO_PIN_5, GPIO_PIN_4, GPIO_PIN_3, GPIO_PIN_15, GPIO_PIN_7, GPIO_PIN_6 ,GPIO_PIN_12 ,GPIO_PIN_11, GPIO_PIN_8, \
                         GPIO_PIN_15, GPIO_PIN_14, GPIO_PIN_13, GPIO_PIN_12, GPIO_PIN_11, GPIO_PIN_10, GPIO_PIN_2};
 
-static uint8_t snake_head = 0;  // Trenutna glava zmije
-static uint8_t snake_counter = 0;  // Brojač za usporavanje
+volatile uint8_t snake_head = 0;  // Trenutna glava zmije
+volatile uint8_t snake_counter = 0;  // Brojač za usporavanje
 
 // Stanje LED dioda (simulacija konstante, treba postavljati u aplikaciji)
 volatile uint8_t led_states[NUMBER_OF_TRIAC] = {0};
 volatile uint8_t triac_states[NUMBER_OF_TRIAC] = {0};  // Trenutnostanje releja
 
 // Trenutno aktivni red
-static uint8_t active_row = 0;
+volatile uint8_t active_row = 0;
 
 volatile uint32_t last_press_time = 0;
 volatile uint32_t menu_timer = 0;
@@ -81,12 +81,13 @@ volatile uint32_t last_toggle_time = 0;
 volatile uint8_t toggle_state = 0;
 volatile uint8_t menu_activ = 0;
 volatile uint8_t selected_channel = NUMBER_OF_TRIAC - 1;
-uint8_t button_select_prev = 0, button_onoff_prev = 0;
-static uint8_t my_address = 0;
-static uint8_t first_toggle = 1;
-static uint16_t triac_start = 0;
-static uint16_t triac_end = 0;
+volatile uint8_t button_select_prev = 0, button_onoff_prev = 0;
+volatile uint8_t my_address = 0;
+volatile uint8_t first_toggle = 1;
+volatile uint16_t triac_start = 0;
+volatile uint16_t triac_end = 0;
 bool init_tf = false;
+bool restart = false;
 bool setup_mod = false;
 uint8_t rec;
 TinyFrame tfapp;
@@ -108,7 +109,21 @@ void RS485_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 /**
-  * @brief Bus address update
+  * @brief  staticka inline funkcija pauze 1~2ms za kašnjenje odgovora za stabilne repeatere
+  *         u interruptu se ne može koristiti HAL_GetTick ni HAL_Delay tako da ova funkcija
+  *         obezbjeduje kašnjenje oko 1 ms bez hal drivera gubljenjem vremena izvršavanjem 
+  *         ciklusa koji ne rade ništa
+  * @param
+  * @retval
+  */
+static inline void delay_us(uint32_t us) {
+    volatile uint32_t cycles = (HAL_RCC_GetHCLKFreq() / 20000000) * us;  // Smanjen faktor
+    while (cycles--) {                                  
+        __asm volatile("NOP");  // Izbegava optimizaciju
+    }
+}
+/**
+  * @brief Podesi rs485 adresu  uređaja prema poziciji DIP sitcheva
   * @retval None
   */
 void get_address(void)
@@ -254,6 +269,7 @@ void handle_buttons(void)
             menu_timer = current_time + MENU_TIMEOUT;
             last_press_time = current_time; // load first press time
             refresh_led();
+            get_address(); // ponovo uzmi adresu
             HAL_Delay(BUTTON_PAUSE);
         }
     }
@@ -329,6 +345,79 @@ void menu_logic(void)
         last_toggle_time = current_time;    // Ažuriraj vrijeme zadnjeg toggle-a
     }
 }
+/**
+  * @brief LED efect for settings menu
+  * @retval None
+  */
+void start_effect(void)
+{
+    setup_mod = true;
+    HAL_Delay(1200);
+#ifdef USE_WATCHDOG
+    HAL_IWDG_Refresh(&hiwdg);
+#endif
+    HAL_Delay(1200);
+#ifdef USE_WATCHDOG
+    HAL_IWDG_Refresh(&hiwdg);
+#endif
+    HAL_Delay(1200);
+#ifdef USE_WATCHDOG
+    HAL_IWDG_Refresh(&hiwdg);
+#endif
+    setup_mod = false;
+    for (uint8_t i = 0; i < NUMBER_OF_TRIAC; i++)
+    {
+        led_states[i] = 0;
+    }
+HAL_Delay(100);
+#ifdef USE_WATCHDOG
+    HAL_IWDG_Refresh(&hiwdg);
+#endif
+    for (uint8_t i = 0; i < NUMBER_OF_TRIAC; i++)
+    {
+        led_states[i] = 1;
+    }
+HAL_Delay(100);
+#ifdef USE_WATCHDOG
+    HAL_IWDG_Refresh(&hiwdg);
+#endif
+    for (uint8_t i = 0; i < NUMBER_OF_TRIAC; i++)
+    {
+        led_states[i] = 0;
+    }
+HAL_Delay(100);
+#ifdef USE_WATCHDOG
+    HAL_IWDG_Refresh(&hiwdg);
+#endif
+    for (uint8_t i = 0; i < NUMBER_OF_TRIAC; i++)
+    {
+        led_states[i] = 1;
+    }
+HAL_Delay(100);
+#ifdef USE_WATCHDOG
+    HAL_IWDG_Refresh(&hiwdg);
+#endif
+    for (uint8_t i = 0; i < NUMBER_OF_TRIAC; i++)
+    {
+        led_states[i] = 0;
+    }
+HAL_Delay(100);
+#ifdef USE_WATCHDOG
+    HAL_IWDG_Refresh(&hiwdg);
+#endif
+    for (uint8_t i = 0; i < NUMBER_OF_TRIAC; i++)
+    {
+        led_states[i] = 1;
+    }
+HAL_Delay(100);
+#ifdef USE_WATCHDOG
+    HAL_IWDG_Refresh(&hiwdg);
+#endif
+    for (uint8_t i = 0; i < NUMBER_OF_TRIAC; i++)
+    {
+        led_states[i] = 0;
+    }
+}
 /* USER CODE END 0 */
 
 /**
@@ -368,19 +457,27 @@ int main(void)
     MX_TIM14_Init();
     /* USER CODE BEGIN 2 */
     RS485_Init();
+    get_address();
+    start_effect();
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1)
     {
-        get_address();
+        if(restart == true) Error_Handler(); // resetuj modul ako je flag dignut
+#ifndef USE_DEBUGGER
         handle_buttons();
         menu_logic();
+#endif
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
         set_triac();
+        
+#ifdef USE_WATCHDOG
+        HAL_IWDG_Refresh(&hiwdg);
+#endif
     }
     /* USER CODE END 3 */
 }
@@ -591,7 +688,7 @@ static void MX_IWDG_Init(void)
 
     /* USER CODE END IWDG_Init 1 */
     hiwdg.Instance = IWDG;
-    hiwdg.Init.Prescaler = IWDG_PRESCALER_4;
+    hiwdg.Init.Prescaler = IWDG_PRESCALER_32;
     hiwdg.Init.Window = 4095;
     hiwdg.Init.Reload = 4095;
     if (HAL_IWDG_Init(&hiwdg) != HAL_OK)
@@ -660,7 +757,8 @@ static void MX_USART1_UART_Init(void)
     huart1.Init.OverSampling = UART_OVERSAMPLING_16;
     huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
     huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
-    if (HAL_RS485Ex_Init(&huart1, UART_DE_POLARITY_HIGH, 0, 0) != HAL_OK)
+    
+    if (HAL_RS485Ex_Init(&huart1, UART_DE_POLARITY_HIGH, 3, 3) != HAL_OK)
     {
         Error_Handler();
     }
@@ -767,31 +865,32 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 // Timer interrupt callback
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) 
+{
     if (htim->Instance == TIM14) {
         if(setup_mod == true) update_snake();  // Ažuriraj stanje zmije ako je mod podešavanja aktivan
         refresh_led_matrix();
     }
 }
 /**
-  * @brief
+  * @brief  Sluša bus za paket sa BINARY_SET tipom i provjerava adresirani izlaz 
+  *         ako je u sopstvenom opsegu reaguje na ostale ne odgovara
   * @param
   * @retval
   */
-TF_Result BINARY_Listener(TinyFrame *tf, TF_Msg *msg)
+TF_Result BINARY_SET_Listener(TinyFrame *tf, TF_Msg *msg)
 {
-    uint8_t idx = 0;
     uint8_t res = 0;
-    uint16_t adr = ((msg->data[0] << 8) | msg->data[1]); // Kombinacija dva bajta u adresu
-    uint8_t ret[1]; // Niz za vraćanje stanja
+    uint16_t adr = (uint16_t) (msg->data[0] << 8) | msg->data[1]; // Kombinacija dva bajta u adresu
+    uint8_t idx = adr - triac_start; // Izračunavanje indeksa triaka
+    uint8_t ret[4]; // Niz za vraćanje stanja
 
-    // Proveravamo da li je adresa unutar opsega rel_start i rel_end
-    if (adr >= triac_start && adr <= triac_end) {
-        idx = adr - triac_start; // Izračunavanje indeksa releja
+    // Provjeravamo da li je adresa unutar opsega triac_start i triac_end
+    if (adr && my_address && (adr >= triac_start) && (adr <= triac_end)) {
         if (msg->data[2] == 0x01) {
-            triac_states[idx] = 1;  // Uključivanje releja
+            triac_states[idx] = 1;  // Uključivanje triaka
         } else if (msg->data[2] == 0x02) {
-            triac_states[idx] = 0;  // Isključivanje releja
+            triac_states[idx] = 0;  // Isključivanje triaka
         }
         refresh_led();
         res++;  // Povećavamo broj uspešnih operacija
@@ -799,41 +898,71 @@ TF_Result BINARY_Listener(TinyFrame *tf, TF_Msg *msg)
 
     // Ako je došlo do promene stanja, vraćamo novo stanje
     if (res == 1) {
+        ret[0] = msg->data[0];
+        ret[1] = msg->data[1];
         if (triac_states[idx] == 1) {
-            ret[0] = 1;  // Stanje 1 (ON)
+            ret[2] = 1;  // Stanje 1 (ON)
         } else {
-            ret[0] = 2;  // Stanje 2 (OFF)
+            ret[2] = 2;  // Stanje 2 (OFF)
         }
-
+        ret[3] = ACK; // Dodaj bajt potvrde
         msg->data = ret;  // Postavljamo novi niz za odgovor
-        msg->len = 1;  // Dužina odgovora je 1
+        msg->len = 4;  // Dužina odgovora je 4 bajta
         TF_Respond(tf, msg);  // Odgovaramo sa novim stanjem
     }
 
     return TF_STAY;  // Održavanje trenutnog stanja
 }
 /**
-  * @brief
+  * @brief  Sluša bus za paket sa BINARY_GET tipom i provjerava adresirani izlaz 
+  *         ako je u sopstvenom opsegu odgovara sa stanjem na ostale ne odgovara
   * @param
   * @retval
   */
-TF_Result STATUS_Listener(TinyFrame *tf, TF_Msg *msg)
+TF_Result BINARY_GET_Listener(TinyFrame *tf, TF_Msg *msg)
 {
-    uint16_t adr = ((msg->data[0] << 8) | msg->data[1]);  // Kombinacija dva bajta u adresu
-    uint8_t ret[1]; // Niz za vraćanje stanja
+    uint16_t adr = (uint16_t) (msg->data[0] << 8) | msg->data[1]; // Kombinacija dva bajta u adresu
+    uint8_t idx = adr - triac_start; // Izračunavanje indeksa triaka
+    uint8_t ret[3]; // Niz za vraćanje stanja
 
     // Proveravamo da li je adresa unutar opsega rel_start i rel_end
-    if (adr >= triac_start && adr <= triac_end) {
-        uint8_t idx = adr - triac_start;  // Izračunavanje indeksa releja
+    if (adr && my_address && (adr >= triac_start) && (adr <= triac_end)) {
         // Vraćamo stanje releja na toj adresi
+        ret[0] = msg->data[0];
+        ret[1] = msg->data[1];
         if (triac_states[idx] == 1) {
-            ret[0] = 1;  // Stanje 1 (ON)
+            ret[2] = 1;  // Stanje 1 (ON)
         } else {
-            ret[0] = 2;  // Stanje 2 (OFF)
+            ret[2] = 2;  // Stanje 2 (OFF)
         }
-
         msg->data = ret;  // Postavljamo novi niz sa stanjem releja
-        msg->len = 1;  // Dužina odgovora je 1 (samo jedan bajt)
+        msg->len = 3;  // Dužina odgovora je 3 bajta
+        TF_Respond(tf, msg);  // Odgovaramo sa stanjem releja
+    }
+
+    return TF_STAY;  // Održavanje trenutnog stanja
+}
+/**
+  * @brief  Sluša bus za paket sa BINARY_RESET tipom i provjerava adresirani izlaz 
+  *         ako je u sopstvenom opsegu setuje flag odgovara i nakon odogovora pokreće reset
+  * @param
+  * @retval
+  */
+TF_Result BINARY_RESET_Listener(TinyFrame *tf, TF_Msg *msg)
+{
+    uint16_t adr = (uint16_t) (msg->data[0] << 8) | msg->data[1]; // Kombinacija dva bajta u adresu
+    uint8_t idx = adr - triac_start; // Izračunavanje indeksa triaka
+    uint8_t ret[3]; // Niz za vraćanje stanja
+
+    // Proveravamo da li je adresa unutar opsega rel_start i rel_end
+    if (adr && my_address && (adr >= triac_start) && (adr <= triac_end)) {
+        restart = true; // setujemo flag a ne restartujemo odmah da bi vratili odgovor
+        // Vraćamo ACK
+        ret[0] = msg->data[0];
+        ret[1] = msg->data[1];
+        ret[2] = ACK;
+        msg->data = ret;  // Postavljamo novi niz sa stanjem releja
+        msg->len = 3;  // Dužina odgovora je 3 bajta
         TF_Respond(tf, msg);  // Odgovaramo sa stanjem releja
     }
 
@@ -848,8 +977,9 @@ void RS485_Init(void)
 {
     if(!init_tf) {
         init_tf = TF_InitStatic(&tfapp, TF_SLAVE);
-        TF_AddTypeListener(&tfapp, V_STATUS, STATUS_Listener);
-        TF_AddTypeListener(&tfapp, S_BINARY, BINARY_Listener);
+        TF_AddTypeListener(&tfapp, BINARY_GET, BINARY_GET_Listener);
+        TF_AddTypeListener(&tfapp, BINARY_SET, BINARY_SET_Listener);
+        TF_AddTypeListener(&tfapp, BINARY_RESET, BINARY_RESET_Listener);
     }
     HAL_UART_Receive_IT(&huart1, &rec, 1);
 }
@@ -871,6 +1001,7 @@ void RS485_Tick(void)
   */
 void TF_WriteImpl(TinyFrame *tf, const uint8_t *buff, uint32_t len)
 {
+    delay_us(2000); // puza kod odgovora zbog repeatera na linji 
     HAL_UART_Transmit(&huart1,(uint8_t*)buff, len, RESP_TOUT);
     HAL_UART_Receive_IT(&huart1, &rec, 1);
 }
@@ -920,6 +1051,7 @@ void Error_Handler(void)
     __disable_irq();
     while (1)
     {
+        HAL_NVIC_SystemReset();  
     }
     /* USER CODE END Error_Handler_Debug */
 }

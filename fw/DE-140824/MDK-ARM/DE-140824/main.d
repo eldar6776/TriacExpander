@@ -37,11 +37,11 @@ de-140824/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_tim_ex.h \
   ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_uart.h \
   ..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_uart_ex.h \
-  ..\Common\common.h ..\Middlewares\LuxNET\LuxNET.h \
-  ..\Middlewares\TinyFrame\TinyFrame.h \
+  ..\..\..\..\..\Common\common.h ..\..\..\..\..\Common\LuxNET.h \
+  ..\..\..\..\..\Common\TinyFrame.h \
   C:\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h \
   C:\Keil\ARM\ARMCLANG\Bin\..\include\string.h \
-  ..\Middlewares\TinyFrame\TF_Config.h \
+  ..\..\..\..\..\Common\TF_Config.h \
   C:\Keil\ARM\ARMCLANG\Bin\..\include\stdio.h \
   C:\Keil\ARM\ARMCLANG\Bin\..\include\stdarg.h \
   C:\Keil\ARM\ARMCLANG\Bin\..\include\stdlib.h

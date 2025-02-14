@@ -140,7 +140,7 @@ static void UARTEx_Wakeup_AddressConfig(UART_HandleTypeDef *huart, UART_WakeUpTy
   *       5-bit value defining the time between the activation of the DE (Driver Enable)
   *       signal and the beginning of the start bit. It is expressed in sample time
   *       units (1/8 or 1/16 bit time, depending on the oversampling rate)
-  * @param DeassertionTime  Driver Enable deassertion time:
+  * @param    Driver Enable deassertion time:
   *       5-bit value defining the time between the end of the last stop bit, in a
   *       transmitted message, and the de-activation of the DE (Driver Enable) signal.
   *       It is expressed in sample time units (1/8 or 1/16 bit time, depending on the
@@ -150,7 +150,7 @@ static void UARTEx_Wakeup_AddressConfig(UART_HandleTypeDef *huart, UART_WakeUpTy
 HAL_StatusTypeDef HAL_RS485Ex_Init(UART_HandleTypeDef *huart, uint32_t Polarity, uint32_t AssertionTime,
                                    uint32_t DeassertionTime)
 {
-  uint32_t temp;
+  uint32_t temp; 
 
   /* Check the UART handle allocation */
   if (huart == NULL)
